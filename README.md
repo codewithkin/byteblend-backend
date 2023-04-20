@@ -1,3 +1,2 @@
-# byteblend-backend
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/express-simple-wxcdjy)
+# Byteblend-backend
+[ Backend code for Byteblend - the social media network ford developers ]
