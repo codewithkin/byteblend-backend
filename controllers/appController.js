@@ -15,9 +15,10 @@ const getPost = async(req, res) => {
 
 //Creating a new post
 const createPost = async(req, res) => {
-    const { poster, contents } = req.body;
-    const post = await Post.create({ poster, contents })
-        .then(post => res.json(post))
+    const { poster, contents, liked } = req.body;
+    const postData = JSON.parse(JSON.stringify({ poster, contents, liked }));
+    const post = await Post.create(postData)
+        .then(post => res.json(post)) 
 };
 
 //Deleting a post, by the id
