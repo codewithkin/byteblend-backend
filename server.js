@@ -14,6 +14,12 @@ app.use(cors());
 //Middleware
 app.use(express.json());
 app.use(express.static('static'));
+app.use(cors({
+  origin: [
+	"http://localhost:4000", "https://byteblend-social-net.onrender.com"],
+	]
+		})
+);
 
 //Listening for requests
 mongoose.connect(uri)
