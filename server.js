@@ -17,7 +17,6 @@ app.use(express.static('static'));
 app.use(cors({
   origin: [
 	"http://localhost:4000", "https://byteblend-social-net.onrender.com"],
-	]
 		})
 );
 
