@@ -9,7 +9,7 @@ const {
 const { createUser, deleteUser, getUser, updateUserPassword } = require('../controllers/usercontroller');
 
 //Retrieving all posts from the database
-router.get('posts/all',  getPosts);
+router.get('/',  getPosts);
 
 //Retrieving a single post from the database
 router.get(':id', getPost);
