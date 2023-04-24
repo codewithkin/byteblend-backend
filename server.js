@@ -29,7 +29,7 @@ mongoose.connect(uri)
     .catch(err => console.log(err));
 
 //Routing
-app.use('/api/byteblend', router);
+app.use('/', router);
 //app.use('/api/byteblend/users/', userRouter);
 
 //404
